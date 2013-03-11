@@ -1,31 +1,64 @@
 package ur.informaticamovil7.movies;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
 
 public class MenuMovies extends Activity {
 
+	SoundManager snd;
+	MediaPlayer mp;
+	int claqueta, button1;
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu);
+		
+		snd = new SoundManager(getApplicationContext());
+		claqueta = snd.load(R.raw.claqueta);
+		button1 = snd.load(R.raw.button3);
+		//mp = MediaPlayer.create(this, R.raw.kalimba);
+		//mp.setLooping(true);
+		//mp.setVolume(0.5f, 0.5f);
+		
+//		if (!mp.isPlaying()) {
+//			mp.start();
+//		}
+		
 		// Show the Up button in the action bar.
 		setupActionBar();
 		
-		Button next = (Button) findViewById(R.id.bt_menu_opciones);
-        next.setOnClickListener(new View.OnClickListener() {
+		Button bt_play = (Button) findViewById(R.id.bt_menu_play);
+        bt_play.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
+                snd.play(claqueta);
+                Intent myIntent = new Intent(view.getContext(), MenuNiveles.class);
+                startActivityForResult(myIntent, 0);
+            }
+        });
+        
+		Button bt_opciones = (Button) findViewById(R.id.bt_menu_opciones);
+		bt_opciones.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+            	snd.play(button1);
                 Intent myIntent = new Intent(view.getContext(), Opciones.class);
                 startActivityForResult(myIntent, 0);
             }
-
+        });
+        
+		Button bt_colabora = (Button) findViewById(R.id.bt_menu_director);
+		bt_colabora.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+            	snd.play(button1);
+            }
         });
 	}
 
@@ -57,7 +90,6 @@ public class MenuMovies extends Activity {
 			//
 			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
 			//
-			NavUtils.navigateUpFromSameTask(this);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

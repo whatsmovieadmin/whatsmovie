@@ -15,7 +15,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.os.Build;
@@ -102,7 +101,6 @@ public class Registro extends Activity {
 			//
 			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
 			//
-			NavUtils.navigateUpFromSameTask(this);
 			return true;
 		}
 		return super.onOptionsItemSelected(item);

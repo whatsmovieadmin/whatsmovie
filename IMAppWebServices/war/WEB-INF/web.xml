@@ -18,6 +18,16 @@
     <servlet-name>SignIn</servlet-name>
     <url-pattern>/webservices/SignIn</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Edit</servlet-name>
+    <servlet-class>com.webservices.Edit</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Edit</servlet-name>
+    <url-pattern>/webservices/Edit</url-pattern>
+  </servlet-mapping>
  
  <servlet>
   <servlet-name>SystemServiceServlet</servlet-name>

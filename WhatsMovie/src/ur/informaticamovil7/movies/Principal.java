@@ -8,19 +8,36 @@ import java.util.concurrent.ExecutionException;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+@SuppressLint("WorldReadableFiles")
 public class Principal extends Activity {
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
+        
+        SharedPreferences myPrefs = this.getSharedPreferences("myPrefs", MODE_WORLD_READABLE);
+        boolean isRemember = myPrefs.getBoolean("REMEMBER", false);
+        if(!isRemember) {
+        	
+        } else{
+        	//String email = myPrefs.getString("LOGIN_EMAIL", "");
+        	//String pswd = myPrefs.getString("LOGIN_PSWD", "");
+        	
+        	Intent myIntent = new Intent(Principal.this, MenuMovies.class);
+            startActivityForResult(myIntent, 0);
+        	
+        }
         
         Button next = (Button) findViewById(R.id.bt_main_registrar);
         next.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +66,14 @@ public class Principal extends Activity {
                     
                     if(!a.contains("error"))
                     {
+                    	
+                    	SharedPreferences myPrefs = Principal.this.getSharedPreferences("myPrefs", MODE_WORLD_READABLE);
+                        SharedPreferences.Editor prefsEditor = myPrefs.edit();
+                        prefsEditor.putString("LOGIN_EMAIL", email.getText().toString());
+                        prefsEditor.putString("LOGIN_PSWD", pwd.getText().toString());
+                        prefsEditor.putBoolean("REMEMBER", true);
+                        prefsEditor.commit();
+                        
                     	Intent myIntent = new Intent(view.getContext(), MenuMovies.class);
                         startActivityForResult(myIntent, 0);
                     }

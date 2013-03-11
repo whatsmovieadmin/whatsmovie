@@ -10,57 +10,53 @@
     android:background="@drawable/wm_bg_opciones" >
 
     <Button
-        android:id="@+id/bt_opciones_stats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/bt_opciones_instrucciones"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="17dp"
-        android:background="@anim/main_button_stats" />
-
-    <Button
         android:id="@+id/bt_opciones_salir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/bt_opciones_stats"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="18dp"
-        android:background="@anim/main_button_salir" />
-
-    <Button
-        android:id="@+id/bt_opciones_acercade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/bt_opciones_instrucciones"
         android:layout_alignBottom="@+id/bt_opciones_instrucciones"
-        android:layout_centerHorizontal="true"
-        android:background="@anim/main_button_acercade" />
-
-    <Button
-        android:id="@+id/bt_opciones_logros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/bt_opciones_stats"
-        android:layout_alignBottom="@+id/bt_opciones_stats"
-        android:layout_alignLeft="@+id/bt_opciones_acercade"
-        android:background="@anim/main_button_logros" />
-
-    <Button
-        android:id="@+id/bt_opciones_editar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/bt_opciones_logros"
-        android:layout_alignBottom="@+id/bt_opciones_logros"
-        android:layout_alignParentLeft="true"
-        android:background="@anim/main_button_editar" />
+        android:layout_alignLeft="@+id/bt_opciones_logros"
+        android:background="@anim/main_button_salir" />
 
     <Button
         android:id="@+id/bt_opciones_instrucciones"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/bt_opciones_salir"
-        android:layout_alignBottom="@+id/bt_opciones_salir"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:background="@anim/main_button_instrucciones" />
+
+    <Button
+        android:id="@+id/bt_opciones_acercade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_opciones_salir"
+        android:layout_alignBottom="@+id/bt_opciones_salir"
+        android:layout_alignParentRight="true"
+        android:background="@anim/main_button_acercade" />
+
+    <Button
+        android:id="@+id/bt_opciones_editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_opciones_instrucciones"
+        android:layout_alignParentLeft="true"
+        android:background="@anim/main_button_editar" />
+
+    <Button
+        android:id="@+id/bt_opciones_logros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_opciones_salir"
+        android:layout_centerHorizontal="true"
+        android:background="@anim/main_button_logros" />
+
+    <Button
+        android:id="@+id/bt_opciones_stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_opciones_acercade"
+        android:layout_alignParentRight="true"
+        android:background="@anim/main_button_stats" />
 
 </RelativeLayout>
