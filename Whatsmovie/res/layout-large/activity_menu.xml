@@ -2,13 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wm_bg_menu"
+    android:background="@drawable/bg_show_hd"
     tools:context=".MenuMovies" >
 
     <Button
         android:id="@+id/bt_menu_play"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_above="@+id/bt_menu_opciones"
         android:layout_centerHorizontal="true"
         android:background="@anim/main_button_play" />
@@ -31,46 +31,6 @@
         android:layout_alignBottom="@+id/bt_menu_opciones"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="22dp"
-        android:background="@anim/main_button_director" />
-
-    <SlidingDrawer
-        android:id="@+id/sliding"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:content="@+id/telon"
-        android:handle="@+id/handle"
-        android:rotation="180"   >
-
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" 
-            android:id="@+id/handle">
-            <ImageView 
-                android:id="@+id/handle_rope"
-            	android:layout_width="wrap_content"
-            	android:layout_height="wrap_content" 
-            	android:background="@drawable/rope"
-            	android:contentDescription="@string/app_name"
-            	android:layout_alignParentLeft="true"
-            	android:layout_marginLeft="15dp"
-            	android:rotation="180" />
-        </RelativeLayout>
-
-        <LinearLayout
-            android:id="@+id/telon"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-            
-            <ImageView 
-                android:id="@+id/img_telon"
-            	android:layout_width="match_parent"
-            	android:layout_height="match_parent" 
-            	android:background="@drawable/telon"
-            	android:contentDescription="@string/app_name"
-            	android:rotation="180" />
-        </LinearLayout>
-    </SlidingDrawer>
+        android:background="@anim/main_button_amigos"/>
 
 </RelativeLayout>

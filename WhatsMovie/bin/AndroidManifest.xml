@@ -12,7 +12,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/logo_wm_final"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
@@ -73,7 +73,8 @@
         <activity
             android:name="ur.informaticamovil7.movies.AcercaDe"
             android:label="@string/title_activity_acerca_de"
-            android:parentActivityName="ur.informaticamovil7.movies.Opciones" >
+            android:parentActivityName="ur.informaticamovil7.movies.Opciones"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ur.informaticamovil7.movies.Opciones" />
@@ -81,10 +82,56 @@
         <activity
             android:name="ur.informaticamovil7.movies.Instrucciones"
             android:label="@string/title_activity_instrucciones"
-            android:parentActivityName="ur.informaticamovil7.movies.Opciones" >
+            android:parentActivityName="ur.informaticamovil7.movies.Opciones"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ur.informaticamovil7.movies.Opciones" />
+        </activity>
+        <activity
+            android:name="ur.informaticamovil7.movies.JuegoNivel1"
+            android:label="@string/title_activity_juego_nivel1"
+            android:parentActivityName="ur.informaticamovil7.movies.MenuNiveles"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ur.informaticamovil7.movies.MenuNiveles" />
+        </activity>
+        <activity
+            android:name="ur.informaticamovil7.movies.JuegoNivel2"
+            android:label="@string/title_activity_juego_nivel2"
+            android:parentActivityName="ur.informaticamovil7.movies.MenuNiveles"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ur.informaticamovil7.movies.MenuNiveles" />
+        </activity>
+        <activity
+            android:name="ur.informaticamovil7.movies.JuegoNivel3"
+            android:label="@string/title_activity_juego_nivel3"
+            android:parentActivityName="ur.informaticamovil7.movies.MenuNiveles"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ur.informaticamovil7.movies.MenuNiveles" />
+        </activity>
+        <activity
+            android:name="ur.informaticamovil7.movies.JuegoNivel4"
+            android:label="@string/title_activity_juego_nivel4"
+            android:parentActivityName="ur.informaticamovil7.movies.MenuNiveles"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ur.informaticamovil7.movies.MenuNiveles" />
+        </activity>
+        <activity
+            android:name="ur.informaticamovil7.movies.JuegoNivel5"
+            android:label="@string/title_activity_juego_nivel5"
+            android:parentActivityName="ur.informaticamovil7.movies.MenuNiveles"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ur.informaticamovil7.movies.MenuNiveles" />
         </activity>
     </application>
 

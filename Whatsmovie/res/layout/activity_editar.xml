@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Editar"
-    android:background="@drawable/wm_bg_opciones" >
+    android:background="@drawable/bg_login" >
 
     <Button
         android:id="@+id/bt_edi_salir"
@@ -18,7 +18,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:background="@anim/main_button_gris"
-        android:minHeight="40dip"
+        android:minHeight="25dip"
+        android:textSize="25sp"
         android:text="@string/bt_salir_sin_guardar" />
 
     <Button
@@ -30,6 +31,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:background="@anim/main_button_orange"
+        android:minHeight="25dip"
+        android:textSize="25sp"
         android:text="@string/bt_guardar"
         android:textColor="#ffffff" />
 

@@ -2,90 +2,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wm_bg_opciones"
+    android:background="@drawable/bg_login"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical"
     tools:context=".Instrucciones" >
 
+    <TextView
+        android:id="@+id/tv_instrucciones_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/title_activity_instrucciones"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
     <ScrollView
-        android:id="@+id/scrollView1"
+        android:id="@+id/sv_instrucciones_scroll"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/txt_instrucciones" >
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_instrucciones_title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp" >
 
         <LinearLayout
-            android:id="@+id/txt_relative_layout"
             android:layout_width="match_parent"
-            android:layout_height="236dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="40dp"
-            android:orientation="vertical" >
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideInset" >
 
             <TextView
-                android:id="@+id/txt_instrucciones_texto1"
-                android:layout_width="fill_parent"
+                android:id="@+id/instrucciones_titulo1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="@string/text_instrucciones_texto1"
-                android:textColor="@android:color/white" />
-
-            <TextView
-                android:id="@+id/txt_instrucciones_texto2"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_instrucciones_texto2"
+                android:text="@string/text_instrucciones_titulo1"
                 android:textColor="@android:color/white" />
 
             <TextView
-                android:id="@+id/txt_instrucciones_texto3"
-                android:layout_width="fill_parent"
+                android:id="@+id/instrucciones_contenido1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_instrucciones_texto3"
+                android:text="@string/text_instrucciones_contenido1"
+                android:layout_marginBottom="10dp"
                 android:textColor="@android:color/white" />
 
             <TextView
-                android:id="@+id/txt_instrucciones_texto4"
-                android:layout_width="fill_parent"
+                android:id="@+id/instrucciones_titulo2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_instrucciones_texto4"
-                android:textColor="@android:color/white" />
-            <TextView
-                android:id="@+id/txt_instrucciones_texto5"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_instrucciones_texto5"
-                android:textColor="@android:color/white" />
-            <TextView
-                android:id="@+id/txt_instrucciones_texto6"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_instrucciones_texto6"
-                android:textColor="@android:color/white" />
-            <TextView
-                android:id="@+id/txt_instrucciones_texto7"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_instrucciones_texto7"
-                android:textColor="@android:color/white" />
-            <TextView
-                android:id="@+id/txt_instrucciones_texto8"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_instrucciones_texto8"
+                android:text="@string/text_instrucciones_titulo2"
                 android:textColor="@android:color/white" />
 
+            <TextView
+                android:id="@+id/instrucciones_contenido2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_instrucciones_contenido2"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/instrucciones_titulo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_instrucciones_titulo3"
+                android:textColor="@android:color/white" />
+            
+            <TextView
+                android:id="@+id/instrucciones_contenido3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_instrucciones_contenido3"
+                android:textColor="@android:color/white" />
         </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/txt_instrucciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="189dp"
-        android:text="@string/title_activity_instrucciones"
-        android:textColor="@android:color/white"
-        android:textSize="28sp"
-        android:textStyle="bold" />
 
 </RelativeLayout>

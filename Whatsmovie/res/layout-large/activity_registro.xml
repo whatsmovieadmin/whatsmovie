@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Registro" 
-    android:background="@drawable/wm_bg_registro">
+    android:background="@drawable/bg_login_hd">
 
     <Button
         android:id="@+id/bt_reg_registrar"
@@ -18,73 +18,75 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="11dp"
-        android:minHeight="100dip"
+        android:minHeight="30dip"
+        android:textSize="45sp"
         android:background="@anim/main_button_gris"
-        android:text="@string/bt_registrar"
-        android:textSize="40sp" />
+        android:text="@string/bt_registrar" />
 
     <EditText
         android:id="@+id/input_reg_rpass"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/bt_reg_registrar"
         android:layout_alignLeft="@+id/bt_reg_registrar"
         android:layout_alignRight="@+id/bt_reg_registrar"
         android:background="@anim/main_text_white"
-        android:drawableLeft="@drawable/wm_icon_pass"
+        android:drawableLeft="@drawable/wm_icon_pass_hd"
         android:drawablePadding="5dp"
         android:ems="10"
+        android:textSize="30sp"
         android:hint="@string/des_rconstrasenia"
         android:inputType="textPassword"
-        android:layout_marginBottom="15dp"
-        android:textSize="25sp" />
+        android:layout_marginBottom="15dp" />
 
     <EditText
         android:id="@+id/input_reg_pass"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/input_reg_rpass"
         android:layout_alignLeft="@+id/input_reg_rpass"
         android:layout_alignRight="@+id/input_reg_rpass"
         android:background="@anim/main_text_white"
-        android:drawableLeft="@drawable/wm_icon_pass"
+        android:drawableLeft="@drawable/wm_icon_pass_hd"
         android:drawablePadding="5dp"
         android:ems="10"
+        android:textSize="30sp"
         android:hint="@string/des_constrasenia"
         android:inputType="textPassword"
-        android:layout_marginBottom="4dp"
-        android:textSize="25sp" />
+        android:layout_marginBottom="4dp"  />
 
     <EditText
         android:id="@+id/input_reg_email"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/input_reg_pass"
         android:layout_alignLeft="@+id/input_reg_pass"
         android:layout_alignRight="@+id/input_reg_pass"
         android:background="@anim/main_text_white"
-        android:drawableLeft="@drawable/wm_icon_email"
+        android:drawableLeft="@drawable/wm_icon_email_hd"
         android:drawablePadding="5dp"
         android:ems="10"
+        android:textSize="30sp"
         android:hint="@string/des_email"
         android:inputType="textEmailAddress"
-        android:layout_marginBottom="4dp"
-        android:textSize="25sp" />
+        android:layout_marginBottom="4dp"  >
+
+    </EditText>
 
     <EditText
         android:id="@+id/input_reg_user"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/input_reg_email"
         android:layout_alignLeft="@+id/input_reg_email"
         android:layout_alignRight="@+id/input_reg_email"
         android:background="@anim/main_text_white"
-        android:drawableLeft="@drawable/wm_icon_user"
+        android:drawableLeft="@drawable/wm_icon_user_hd"
         android:drawablePadding="5dp"
         android:ems="10"
+        android:textSize="30sp"
         android:hint="@string/des_user"
         android:inputType="textPersonName"
-        android:layout_marginBottom="4dp"
-        android:textSize="25sp" />
+        android:layout_marginBottom="4dp"  />
 
 </RelativeLayout>

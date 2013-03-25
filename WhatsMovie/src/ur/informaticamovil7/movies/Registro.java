@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.annotation.TargetApi;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Build;
 
 public class Registro extends Activity {
@@ -24,11 +25,28 @@ public class Registro extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_registro);
+		
+		Typeface pacifico = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
+        Typeface walkway_semibold = Typeface.createFromAsset(getAssets(), "fonts/Walkway_SemiBold.ttf");
+		
+		EditText et_userName = (EditText)findViewById(R.id.input_reg_user);
+		EditText et_email = (EditText)findViewById(R.id.input_reg_email);
+		EditText et_pwd = (EditText)findViewById(R.id.input_reg_pass);
+		EditText et_rpwd = (EditText)findViewById(R.id.input_reg_rpass);
+		
+		
+		et_userName.setTypeface(walkway_semibold);
+		et_email.setTypeface(walkway_semibold);
+		et_pwd.setTypeface(walkway_semibold);
+		et_rpwd.setTypeface(walkway_semibold);
+		
 		// Show the Up button in the action bar.
 		setupActionBar();
 		
-		Button next = (Button) findViewById(R.id.bt_reg_registrar);
-        next.setOnClickListener(new View.OnClickListener() {
+		Button bt_registro = (Button) findViewById(R.id.bt_reg_registrar);
+		
+		bt_registro.setTypeface(pacifico);
+		bt_registro.setOnClickListener(new View.OnClickListener() {
             private EditText userName;
 			private EditText email;
 			private EditText pwd;

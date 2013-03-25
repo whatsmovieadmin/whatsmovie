@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Editar"
-    android:background="@drawable/wm_bg_opciones" >
+    android:background="@drawable/bg_login_hd" >
 
     <Button
         android:id="@+id/bt_edi_salir"
@@ -18,9 +18,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:background="@anim/main_button_gris"
-        android:minHeight="80dip"
-        android:text="@string/bt_salir_sin_guardar" 
-        android:textSize="40sp"/>
+        android:minHeight="30dip"
+        android:textSize="50sp"
+        android:text="@string/bt_salir_sin_guardar"/>
 
     <Button
         android:id="@+id/bt_edi_guardar"
@@ -32,9 +32,9 @@
         android:layout_alignParentRight="true"
         android:background="@anim/main_button_orange"
         android:text="@string/bt_guardar"
-        android:minHeight="80dip"
-        android:textColor="#ffffff"
-        android:textSize="40sp"/>
+        android:minHeight="30dip"
+        android:textSize="50sp"
+        android:textColor="#ffffff"/>
 
     <EditText
         android:id="@+id/input_edi_rpass"
@@ -45,12 +45,12 @@
         android:layout_alignParentRight="true"
         android:layout_marginBottom="22dp"
         android:background="@anim/main_text_white"
-        android:drawableLeft="@drawable/wm_icon_pass"
+        android:drawableLeft="@drawable/wm_icon_pass_hd"
         android:drawablePadding="5dp"
         android:ems="10"
+        android:textSize="50sp"
         android:hint="@string/des_rconstrasenia"
-        android:inputType="textPassword"
-        android:textSize="25sp" />
+        android:inputType="textPassword"/>
 
     <EditText
         android:id="@+id/input_edi_pass"
@@ -60,12 +60,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:background="@anim/main_text_white"
-        android:drawableLeft="@drawable/wm_icon_pass"
+        android:drawableLeft="@drawable/wm_icon_pass_hd"
         android:drawablePadding="5dp"
         android:ems="10"
+        android:textSize="50sp"
         android:layout_marginBottom="5dp" 
         android:hint="@string/des_nueva_constrasenia"
-        android:inputType="textPassword"
-        android:textSize="25sp" />
+        android:inputType="textPassword"/>
 
 </RelativeLayout>

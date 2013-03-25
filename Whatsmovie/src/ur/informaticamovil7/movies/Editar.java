@@ -19,6 +19,7 @@ import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Build;
 
 @SuppressLint("WorldReadableFiles")
@@ -28,10 +29,22 @@ public class Editar extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_editar);
+		
+		Typeface pacifico = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
+        Typeface walkway_semibold = Typeface.createFromAsset(getAssets(), "fonts/Walkway_SemiBold.ttf");
+        
+        EditText et_pass = (EditText)findViewById(R.id.input_edi_pass);
+        EditText et_rpass = (EditText)findViewById(R.id.input_edi_rpass);
+        
+        et_pass.setTypeface(walkway_semibold);
+        et_rpass.setTypeface(walkway_semibold);
+        
 		// Show the Up button in the action bar.
 		setupActionBar();
 		
 		Button bt_guardar_cambios = (Button) findViewById(R.id.bt_edi_guardar);
+		
+		bt_guardar_cambios.setTypeface(pacifico);
 		bt_guardar_cambios.setOnClickListener(new View.OnClickListener() {
 			private EditText edNpwd;
 			private EditText edRnpwd;
@@ -86,6 +99,8 @@ public class Editar extends Activity {
         });
 		
 		Button bt_salir_sin_guardar = (Button) findViewById(R.id.bt_edi_salir);
+		
+		bt_salir_sin_guardar.setTypeface(pacifico);
 		bt_salir_sin_guardar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), Opciones.class);

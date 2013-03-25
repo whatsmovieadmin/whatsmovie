@@ -12,6 +12,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -26,29 +27,40 @@ public class Principal extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         
+        Typeface pacifico = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
+        Typeface walkway_semibold = Typeface.createFromAsset(getAssets(), "fonts/Walkway_SemiBold.ttf");
+        
+        EditText et_email = (EditText)findViewById(R.id.input_main_email);
+        EditText et_pwd = (EditText)findViewById(R.id.input_main_pass);
+        
+        et_email.setTypeface(walkway_semibold);
+        et_pwd.setTypeface(walkway_semibold);
+        
         SharedPreferences myPrefs = this.getSharedPreferences("myPrefs", MODE_WORLD_READABLE);
         boolean isRemember = myPrefs.getBoolean("REMEMBER", false);
         if(!isRemember) {
         	
         } else{
-        	//String email = myPrefs.getString("LOGIN_EMAIL", "");
-        	//String pswd = myPrefs.getString("LOGIN_PSWD", "");
-        	
+       	
         	Intent myIntent = new Intent(Principal.this, MenuMovies.class);
             startActivityForResult(myIntent, 0);
         	
         }
         
-        Button next = (Button) findViewById(R.id.bt_main_registrar);
-        next.setOnClickListener(new View.OnClickListener() {
+        Button bt_registrar = (Button) findViewById(R.id.bt_main_registrar);
+        
+        bt_registrar.setTypeface(pacifico);
+        bt_registrar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent myIntent = new Intent(view.getContext(), Registro.class);
                 startActivityForResult(myIntent, 0);
             }
         });
         
-        Button next2 = (Button) findViewById(R.id.bt_main_entrar);
-        next2.setOnClickListener(new View.OnClickListener() {
+        Button bt_entrar = (Button) findViewById(R.id.bt_main_entrar);
+        
+        bt_entrar.setTypeface(pacifico);
+        bt_entrar.setOnClickListener(new View.OnClickListener() {
             
         	private EditText email;
 			private EditText pwd;

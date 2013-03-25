@@ -2,8 +2,10 @@ package ur.informaticamovil7.movies;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.support.v4.app.NavUtils;
 
 public class AcercaDe extends Activity {
@@ -12,8 +14,23 @@ public class AcercaDe extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_acerca_de);
+
+		Typeface pacifico = Typeface.createFromAsset(getAssets(), "fonts/Pacifico.ttf");
+
+		TextView et_creador1 = (TextView) findViewById(R.id.txt_acercade_creadores);
+		TextView et_creador2 = (TextView) findViewById(R.id.txt_acercade_creadores1);
+		TextView et_version = (TextView) findViewById(R.id.txt_acercade_version);
+		TextView et_derechos = (TextView) findViewById(R.id.txt_acercade_derechos);
+		TextView et_anio = (TextView) findViewById(R.id.txt_acercade_anoYEmpresa);
+
+		et_creador1.setTypeface(pacifico);
+		et_creador2.setTypeface(pacifico);
+		et_version.setTypeface(pacifico);
+		et_derechos.setTypeface(pacifico);
+		et_anio.setTypeface(pacifico);
+
 		// Show the Up button in the action bar.
-		//getActionBar().setDisplayHomeAsUpEnabled(true);
+		// getActionBar().setDisplayHomeAsUpEnabled(true);
 	}
 
 	@Override

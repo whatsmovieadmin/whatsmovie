@@ -1,5 +1,6 @@
 package ur.informaticamovil7.movies;
 
+import Utils.SoundManager;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;

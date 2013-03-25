@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Opciones"
-    android:background="@drawable/wm_bg_opciones" >
+    android:background="@drawable/bg_show_hd" >
 
     <Button
         android:id="@+id/bt_opciones_salir"

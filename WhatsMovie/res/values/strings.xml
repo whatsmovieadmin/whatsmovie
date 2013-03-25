@@ -3,7 +3,6 @@
 
     <string name="app_name">Whats movie?</string>
     <string name="action_settings">Settings</string>
-    <string name="o">o</string>
     <string name="bt_entrar">Entrar</string>
     <string name="bt_registrar">Registrarse</string>
     <string name="des_imageMain">imageMain</string>
@@ -24,16 +23,27 @@
         <item name="android:textColor">#373737</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_margin">3dp</item>
-        <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="ButtonTextRespuesta">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#373737</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <string name="text_acercade_version">Version 1.0.0</string>
-    <string name="text_acercade_anoYEmpresa">© 2012 WhatsMovie Inc.</string>
+    <string name="text_acercade_anoYEmpresa">© 2013 WhatsMovie Inc.</string>
     <string name="text_acercade_derechos">Todos los derechos reservados.</string>
     <string name="text_acercade_creadores1">Diego Ibáñez Pancorbo</string>
-    <string name="text_acercade_creadores2">y</string>
     <string name="text_acercade_creadores3">David Porres Villanueva</string>
+    <string name="text_instrucciones_titulo1">Juego</string>
+    <string name="text_instrucciones_titulo2">Niveles</string>
+    <string name="text_instrucciones_titulo3">Amigos</string>
+    <string name="text_instrucciones_contenido1">El juego consiste en conseguir el máximo numero de puntos acertando a las cinco pruebas de las que dispone el juego.</string>
+    <string name="text_instrucciones_contenido2">Tienes un máximo de diez fallos, si tienes diez fallos antes de acabar la prueba serás eliminado y el juego empezara de 0. Las preguntas falladas no suman ningun punto. Cuando termines una prueba si es tu mejor puntuación se actualizara en el ranking mundial</string>
+    <string name="text_instrucciones_contenido3">Tienes un máximo de diez fallos, si tienes diez fallos antes de acabar la prueba serás eliminado y el juego empezara de 0. Las preguntas falladas no suman ningun punto. Cuando termines una prueba si es tu mejor puntuación se actualizara en el ranking mundial</string>
     <string name="text_instrucciones_texto1">El juego consiste en conseguir el máximo numero de puntos acertando a las cinco pruebas de las que dispone el juego.</string>
     <string name="text_instrucciones_texto2">Las modalidades serán:</string>
     <string name="text_instrucciones_texto3">   - Fotogramas.</string>
@@ -44,13 +54,47 @@
     <string name="text_instrucciones_texto8">Tienes un máximo de diez fallos, si tienes diez fallos antes de acabar la prueba serás eliminado y el juego empezara de 0. Las preguntas falladas no suman ningun punto. Cuando termines una prueba si es tu mejor puntuación se actualizara en el ranking mundial.</string>
     <string name="title_activity_registro">Registro</string>
     <string name="title_activity_menu">Menu</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_opciones">Opciones</string>
     <string name="title_activity_logros">Logros</string>
     <string name="title_activity_menu_niveles">Niveles</string>
     <string name="title_activity_editar">Editar datos</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_acerca_de">Whats movie?</string>
+    <string name="title_activity_acerca_de">Acerca de</string>
     <string name="title_activity_instrucciones">Instrucciones</string>
+    <string name="text_jugar">Jugar</string>
+    <string name="niveles_titulo_1">Nivel 1</string>
+    <string name="niveles_titulo_2">Nivel 2</string>
+    <string name="niveles_titulo_3">Nivel 3</string>
+    <string name="niveles_titulo_4">Nivel 4</string>
+    <string name="niveles_titulo_5">Nivel 5</string>
+    <string name="niveles_subtitulo_1">Fotogramas</string>
+    <string name="niveles_subtitulo_2">Carteles</string>
+    <string name="niveles_subtitulo_3">Actores</string>
+    <string name="niveles_subtitulo_4">Frases</string>
+    <string name="niveles_subtitulo_5">Malos de películas</string>
+    <string name="niveles_desc_1">¿Te consideras un cinéfilo experto? ¿Sabrías identificar a qué película pertenece cada fotograma? \n ¡ Compruébalo !</string>
+    <string name="niveles_desc_2">Un poco más dificil ¿Podrás adivinar a qué película pertenece el cartel? \n ¡ Adelante !</string>
+    <string name="niveles_desc_3">Algunos actores son capaces de emocionarnos con sus interpretaciones ¿Eres capaz de identificar el nombre de cada actor? \n ¡ Ponte a prueba !</string>
+    <string name="niveles_desc_4">¿Tú también dices frases de tus películas favoritas? ¿A qué película se corresponde cada una? \n ¡ Sólo puede quedar uno !</string>
+    <string name="niveles_desc_5">No podía faltar una sección sobre una pieza fundamental de una obra maestra ¿Puedes asociar cada malo con su película? \n ¡ Demuéstralo !</string>
+    <string name="niveles_text_highscore">Mejor puntuación</string>
+    <string name="niveles_text_racha">Mejor racha</string>
+    <string name="niveles_highscore_1">0 puntos</string>
+    <string name="niveles_highscore_2">0 puntos</string>
+    <string name="niveles_highscore_3">0 puntos</string>
+    <string name="niveles_highscore_4">0 puntos</string>
+    <string name="niveles_highscore_5">0 puntos</string>
+    <string name="niveles_racha_1">0x</string>
+    <string name="niveles_racha_2">0x</string>
+    <string name="niveles_racha_3">0x</string>
+    <string name="niveles_racha_4">0x</string>
+    <string name="niveles_racha_5">0x</string>
+    <string name="niveles_num">1/10</string>
+    <string name="title_activity_juego_nivel1">Nivel 1 Fotogramas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_juego_nivel2">Nivel 2 Carteles</string>
+    <string name="title_activity_juego_nivel3">Nivel 3 Actores</string>
+    <string name="title_activity_juego_nivel4">Nivel 4 Frases</string>
+    <string name="title_activity_juego_nivel5">Nivel 5 Malos de películas</string>
 
 </resources>
