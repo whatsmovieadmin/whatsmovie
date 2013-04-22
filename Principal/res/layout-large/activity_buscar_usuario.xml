@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_background_hd"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Amigos" >
+
+    <ListView
+        android:id="@+id/lv_buscar_amigos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bt_buscar_usuario"
+        android:layout_below="@+id/input_buscar_usuario"
+        android:background="@drawable/rounded_corners_white"
+        android:divider="@drawable/divider"
+        android:paddingBottom="10dp" >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/input_buscar_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/lv_buscar_amigos"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/bt_buscar_usuario"
+        android:background="@anim/main_text_white"
+        android:drawableLeft="@drawable/wm_icon_user"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/des_user"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp" >
+
+</EditText>
+
+    <Button
+        android:id="@+id/bt_buscar_usuario"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/input_buscar_usuario"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/rounded_corners_white"
+        android:drawableLeft="@drawable/wm_icon_search"
+        android:text="@string/bt_buscar"
+        android:textSize="14sp" />
+
+</RelativeLayout>

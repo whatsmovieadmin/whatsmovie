@@ -2,6 +2,7 @@ package whatsmovieweb;
 
 import java.util.List;
 
+import com.datastore.User;
 import com.datastore.UserUtil;
 
 public class Utils {
@@ -18,4 +19,9 @@ public class Utils {
 		
 		return (u.contains(name));
     }
+	
+	public static boolean areFriends(User u, String nameFriend)
+	{			
+		return (u.getAmigos().contains(nameFriend));
+	}
 }

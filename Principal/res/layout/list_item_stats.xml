@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlayout_stats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/separador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/vacio"
+        android:textColor="#373737"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:id="@+id/stats_container"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corners_red" >
+
+        <TextView
+            android:id="@+id/stats_grupo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/niveles_titulo_1"
+            android:textColor="#373737"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/stats_grupo"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/divider" />
+
+        <TextView
+            android:id="@+id/tv_stats_puntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/divider"
+            android:layout_marginLeft="32dp"
+            android:text="@string/niveles_highscore_1"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/iv_popcorn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_stats_puntuacion"
+            android:layout_toRightOf="@+id/tv_stats_puntuacion"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/popcorn" />
+
+        <TextView
+            android:id="@+id/tv_stats_racha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_popcorn"
+            android:layout_marginRight="38dp"
+            android:text="@string/niveles_racha_1"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

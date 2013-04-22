@@ -28,6 +28,46 @@
     <servlet-name>Edit</servlet-name>
     <url-pattern>/webservices/Edit</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetSearch</servlet-name>
+    <servlet-class>com.webservices.GetSearch</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GetSearch</servlet-name>
+    <url-pattern>/webservices/GetSearch</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddFriend</servlet-name>
+    <servlet-class>com.webservices.AddFriend</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddFriend</servlet-name>
+    <url-pattern>/webservices/AddFriend</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetFriends</servlet-name>
+    <servlet-class>com.webservices.GetFriends</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GetFriends</servlet-name>
+    <url-pattern>/webservices/GetFriends</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteFriend</servlet-name>
+    <servlet-class>com.webservices.DeleteFriend</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteFriend</servlet-name>
+    <url-pattern>/webservices/DeleteFriend</url-pattern>
+  </servlet-mapping>
  
  <servlet>
   <servlet-name>SystemServiceServlet</servlet-name>

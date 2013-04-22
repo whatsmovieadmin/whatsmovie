@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_show_hd"
+    tools:context=".MenuMovies" >
+
+    <Button
+        android:id="@+id/bt_menu_play"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/bt_menu_opciones"
+        android:layout_centerHorizontal="true"
+        android:background="@anim/main_button_play_hd" />
+
+    <Button
+        android:id="@+id/bt_menu_opciones"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@anim/main_button_options" />
+
+    <Button
+        android:id="@+id/bt_menu_director"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBaseline="@+id/bt_menu_opciones"
+        android:layout_alignBottom="@+id/bt_menu_opciones"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="22dp"
+        android:background="@anim/main_button_amigos"/>
+
+</RelativeLayout>

@@ -1,5 +1,8 @@
 package com.datastore;
 
+import java.util.List;
+import java.util.Vector;
+
 import javax.jdo.annotations.*;
 
 @PersistenceCapable (identityType=IdentityType.APPLICATION)
@@ -14,11 +17,17 @@ public class User {
 	 
 	 @Persistent 
 	 private String password;
+	 
+	 @Persistent 
+	 private List<String> amigos;
+	 
+	 
 
 	 public User(String account, String password, String name){
 		  this.email=account;
 		  this.name=name;
 		  this.password=password;
+		  this.amigos=new Vector<String>();
 	 }
 	 
 	 public String getEmail() {
@@ -43,5 +52,13 @@ public class User {
 
 	 public void setPassword(String password) {
 		this.password = password;
-	 } 
+	 }
+
+	public List<String> getAmigos() {
+		return amigos;
+	}
+
+	public void setAmigos(List<String> amigos) {
+		this.amigos = amigos;
+	} 
 }

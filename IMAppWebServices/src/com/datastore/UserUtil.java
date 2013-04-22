@@ -37,6 +37,33 @@ public class UserUtil {
 		return user;
 	}
 	
+	public static User getUserByName(String name) {
+		 
+		PersistenceManager pm = PMF.get().getPersistenceManager();
+		User user=null;
+		try {
+			
+			List<User> listUsers=listObjectUsers();
+			
+			String email="";
+			
+			for(int i=0;i<listUsers.size();i++)
+			{
+				if((listUsers.get(i).getName().compareTo(name))==0)
+				{
+					email=listUsers.get(i).getEmail();
+				}
+			}
+			
+			user= pm.getObjectById(User.class, email);
+			
+		} finally {
+			pm.close();
+		}
+		
+		return user;
+	}
+	
 	@SuppressWarnings("unchecked")
 	public static List<String> listUsers(){
 		 PersistenceManager pm = PMF.get().getPersistenceManager();
@@ -96,6 +123,31 @@ public class UserUtil {
 		 List<String> usersNames=(List<String>) query.execute();
 		 
 		 return usersNames;
+	}
+	
+	@SuppressWarnings("unchecked")
+	public static List<User> listObjectUsers(){
+		 PersistenceManager pm = PMF.get().getPersistenceManager();
+		 
+		 Query query = pm.newQuery("select from "+User.class.getName()+"");
+		 List<User> users=(List<User>) query.execute();
+		 
+		 return users;
+		 
+	}
+	
+	public static void updateUser(User u) {
+		
+		PersistenceManager pm = PMF.get().getPersistenceManager();
+		try {
+			if(u!=null)
+			{
+				pm.deletePersistent(pm.getObjectById(User.class, u.getEmail()));
+				addUser(u);
+			}
+		} finally {
+			pm.close();
+		}
 	}
 
 }

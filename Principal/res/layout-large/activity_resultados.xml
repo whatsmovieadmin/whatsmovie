@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_background_hd"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Resultados" >
+
+    <ImageView
+        android:id="@+id/iv_balda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/balda" />
+
+    <Button
+        android:id="@+id/bt_resultados_continuar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/iv_balda"
+        android:layout_alignRight="@+id/iv_balda"
+        android:layout_marginBottom="-60dp"
+        android:layout_marginRight="26dp"
+        android:background="@anim/main_button_continuar" />
+
+    <Button
+        android:id="@+id/bt_resultados_repetir"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBaseline="@+id/bt_resultados_continuar"
+        android:layout_alignBottom="@+id/bt_resultados_continuar"
+        android:layout_alignLeft="@+id/iv_balda"
+        android:layout_marginLeft="27dp"
+        android:background="@anim/main_button_repetir" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/rounded_corners_white"
+        android:minHeight="25dip"
+        android:text="@string/title_activity_resultados"
+        android:textSize="30sp" />
+    
+    <RelativeLayout
+        android:id="@+id/rlayout_resultados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_resultados_continuar"
+        android:layout_alignLeft="@+id/bt_resultados_repetir"
+        android:layout_alignRight="@+id/bt_resultados_continuar"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corners_white" >
+
+        <TextView
+            android:id="@+id/tv_enhorabuena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/enhorabuena"
+            android:textColor="#373737"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tv_resultados_numaciertos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_enhorabuena"
+            android:layout_centerHorizontal="true"
+            android:text="@string/numaciertos"
+            android:textColor="#373737"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_resultados_nuevaracha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_resultados_racha"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nuevarachaaciertos"
+            android:textColor="#373737"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_resultados_puntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/puntuacion"
+            android:textColor="#373737"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tv_resultados_racha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_resultados_nuevapuntuacion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="@string/rachaaciertos"
+            android:textColor="#373737"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tv_resultados_nuevapuntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_resultados_puntuacion"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nuevamejorpuntuacion"
+            android:textColor="#373737"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/tv_resultados_puntuacion"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@+id/tv_resultados_puntuacion"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/popcorn" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

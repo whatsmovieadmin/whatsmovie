@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Registro" 
+    android:background="@drawable/bg_login_hd">
+
+    <Button
+        android:id="@+id/bt_reg_registrar"
+        style="@style/ButtonText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+        android:minHeight="25dip"
+        android:textSize="25sp"
+        android:background="@anim/main_button_gris"
+        android:text="@string/bt_registrar" />
+
+    <EditText
+        android:id="@+id/input_reg_rpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_reg_registrar"
+        android:layout_alignLeft="@+id/bt_reg_registrar"
+        android:layout_alignRight="@+id/bt_reg_registrar"
+        android:background="@anim/main_text_white"
+        android:drawableLeft="@drawable/wm_icon_pass"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/des_rconstrasenia"
+        android:inputType="textPassword"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/input_reg_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_reg_rpass"
+        android:layout_alignLeft="@+id/input_reg_rpass"
+        android:layout_alignRight="@+id/input_reg_rpass"
+        android:background="@anim/main_text_white"
+        android:drawableLeft="@drawable/wm_icon_pass"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/des_constrasenia"
+        android:inputType="textPassword"
+        android:layout_marginBottom="4dp"  />
+
+    <EditText
+        android:id="@+id/input_reg_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_reg_pass"
+        android:layout_alignLeft="@+id/input_reg_pass"
+        android:layout_alignRight="@+id/input_reg_pass"
+        android:background="@anim/main_text_white"
+        android:drawableLeft="@drawable/wm_icon_email"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/des_email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="4dp"  >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/input_reg_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_reg_email"
+        android:layout_alignLeft="@+id/input_reg_email"
+        android:layout_alignRight="@+id/input_reg_email"
+        android:background="@anim/main_text_white"
+        android:drawableLeft="@drawable/wm_icon_user"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/des_user"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="4dp"  />
+
+</RelativeLayout>

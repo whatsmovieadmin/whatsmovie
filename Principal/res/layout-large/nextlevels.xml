@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/niveles_nivel6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_background_hd"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/niveles_titulo_6"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/vacio"
+        android:textColor="@android:color/white"
+        android:textSize="80sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tv_niveles_proximamente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/nivelesproximamente"
+            android:textColor="@android:color/white"
+            android:textSize="50sp" />
+
+        <Button
+            android:id="@+id/bt_facebook"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignLeft="@+id/tv_siguenos"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginLeft="41dp"
+            android:background="@anim/main_button_facebook" />
+
+        <Button
+            android:id="@+id/bt_twitter"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignBaseline="@+id/bt_facebook"
+            android:layout_alignBottom="@+id/bt_facebook"
+            android:layout_alignRight="@+id/tv_siguenos"
+            android:layout_marginRight="48dp"
+            android:background="@anim/main_button_twitter" />
+
+        <TextView
+            android:id="@+id/tv_siguenos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bt_facebook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"
+            android:gravity="center_horizontal"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/siguenos"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
